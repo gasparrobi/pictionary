@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.event.drag-2.2.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <title>HTML5 Canvas + Node.JS Socket.io</title>
+</head>
+<body>
+    <section>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <br>
+    <button id="clear">Clear</button>
+    Colour:
+    <select id="colour">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="purple">Purple</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="brown">Brown</option>
+    </select>
+    Size: <input id="size" type="number" value="3"></input>
+    <div id="gameStatus"></div>
+    <div id="scores"></div>
+    </section>
+
+    <aside>
+    <div id="messages"></div>
+    <br>
+    <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+        <input id="nick" autocomplete="off" /><button id="requestNick">Request Nick</button>
+        <input id="room" autocomplete="off" /><button id="joinRoom">Join Room</button>
+
+        <button id="leaveRoom">Leave</button>
+    </aside>
+</body>

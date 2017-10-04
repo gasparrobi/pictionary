@@ -1,0 +1,16 @@
+#canvas {
+    border: 1px solid black;
+}
+
+#messages {
+    border: 1px solid black;
+    width: 200px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+aside {
+    position: absolute;
+    top: 5px;
+    left: 820px;
+}
